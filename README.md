@@ -4,9 +4,10 @@ Static site (plain HTML/CSS/JS, no build step) for GitHub Pages.
 
 ## Before you deploy
 
-1. **Add your real photo.** Drop a photo into `assets/img/profile.jpg` (replacing the placeholder text — the site already points to that file; it'll appear automatically). Recommended: portrait orientation, at least 640x800px.
+1. The current design doesn't use a profile photo anywhere (hero is text-only). `assets/img/placeholder.svg` is unused and safe to delete if you don't plan to add one later.
 2. The CV PDF is already included at `assets/cv/Tommaso_Cristoni_CV.pdf`. Replace this file (keep the same name) whenever you update your CV.
-3. Open `index.html` and double check the TikTok video IDs / links and stats are still accurate if you post new viral content later — the four featured videos are hard-coded in the "Featured content" section.
+3. Open `index.html` and double check the TikTok video IDs / links and stats are still accurate if you post new viral content later — the four featured Luvvette videos are hard-coded in the "Featured content" section.
+4. The three Final Judgment clips live at `assets/video/final-judgment-01/02/03.mp4` (each ~3-5MB) — swap in newer/better clips any time by replacing those files with the same names.
 
 ## Deploy to GitHub Pages (username: plugman7000)
 
