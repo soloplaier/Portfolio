@@ -12,7 +12,7 @@ if (navToggle) {
 
 // Reveal-on-scroll for section heads, cards, timeline items
 const revealTargets = document.querySelectorAll(
-  ".section-head, .stat-card, .video-card, .timeline-item, .skill-group, .contact-inner, .testimonial-video, .testimonial-content, .apply-intro, .apply-form"
+  ".section-head, .case-card, .stat-card, .video-card, .timeline-item, .skill-group, .contact-inner, .testimonial-video, .testimonial-content, .apply-intro, .apply-form"
 );
 revealTargets.forEach((el) => el.classList.add("reveal"));
 
