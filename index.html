@@ -6,6 +6,9 @@
 <title>Tommaso Cristoni — Social Media Manager & Content Creator</title>
 <meta name="description" content="Tommaso Cristoni — Social Media Manager, Content Creator & Digital Marketer. 1.5M+ views, 20K followers grown from zero, and Final Judgment — a streetwear brand founded and creative-directed end to end.">
 <link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@1&display=swap">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -22,9 +25,10 @@
       <a href="#final-judgment">Final Judgment</a>
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
+      <a href="#apply">Apply</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a href="assets/cv/Tommaso_Cristoni_CV.pdf" class="btn btn-ghost nav-cta" download>Download CV</a>
+    <a href="#apply" class="btn btn-primary btn-sm nav-cta">Apply to work with me</a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
@@ -42,8 +46,8 @@
         <h1>I build brands<br> the internet<br><span class="highlight">can&rsquo;t scroll past.</span></h1>
         <p class="hero-sub">London-based. I've grown accounts from zero, directed shoots from concept to delivery, and turned single posts into <strong>1.5M+ views</strong>. Here's the proof, not just the pitch.</p>
         <div class="hero-cta">
-          <a href="#work" class="btn btn-primary">See the Work</a>
-          <a href="assets/cv/Tommaso_Cristoni_CV.pdf" class="btn btn-outline" download>Download CV</a>
+          <a href="#apply" class="btn btn-primary">Apply Now &rarr;</a>
+          <a href="#work" class="btn btn-outline">See the Work</a>
         </div>
         <div class="hero-socials">
           <a href="https://www.instagram.com/luvvetteofficial/" target="_blank" rel="noopener">Instagram (Luvvette)</a>
@@ -385,17 +389,128 @@
     </div>
   </section>
 
+  <!-- APPLY -->
+  <section class="apply" id="apply">
+    <div class="apply-grid">
+      <div class="apply-intro">
+        <p class="eyebrow eyebrow-bracket">[ 01 / Apply ]</p>
+        <h2>Real numbers,<br><span class="serif-accent">real growth.</span></h2>
+        <p class="section-sub">I take on a small number of brands, creators and artists at a time so every account gets proper attention. Tell me where you are and where you want to be. If it's a fit, we'll book a call.</p>
+
+        <div class="apply-stats">
+          <div><span>1.5M+</span><small>Views driven</small></div>
+          <div><span>3.2K&rarr;31.6K</span><small>Creator followers grown</small></div>
+          <div><span>&pound;2.34</span><small>Best cost per lead</small></div>
+        </div>
+
+        <ol class="apply-steps">
+          <li><strong>Apply</strong> Two minutes, five quick questions.</li>
+          <li><strong>Review</strong> I read every application and reply within 48 hours.</li>
+          <li><strong>Strategy call</strong> A free 20-minute call to map out your growth plan.</li>
+        </ol>
+      </div>
+
+      <form class="apply-form" id="applyForm" novalidate>
+        <div class="apply-progress"><span id="applyBar"></span></div>
+        <p class="apply-count"><span id="applyStepNum">01</span> / 05</p>
+
+        <fieldset class="apply-step active" data-step="1">
+          <legend>First, who are you?</legend>
+          <label>Full name<input type="text" name="name" autocomplete="name" required></label>
+          <label>Email<input type="email" name="email" autocomplete="email" required></label>
+          <label>Instagram / TikTok handle or website<input type="text" name="handle" placeholder="@yourbrand" required></label>
+        </fieldset>
+
+        <fieldset class="apply-step" data-step="2">
+          <legend>Which best describes you?</legend>
+          <div class="choice-grid">
+            <label class="choice"><input type="radio" name="type" value="Brand / business" required><span>Brand or business</span></label>
+            <label class="choice"><input type="radio" name="type" value="Creator / personal brand"><span>Creator or personal brand</span></label>
+            <label class="choice"><input type="radio" name="type" value="Artist / musician"><span>Artist or musician</span></label>
+            <label class="choice"><input type="radio" name="type" value="Other"><span>Something else</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="apply-step" data-step="3">
+          <legend>What do you need help with?</legend>
+          <p class="step-hint">Pick as many as you like.</p>
+          <div class="choice-grid">
+            <label class="choice"><input type="checkbox" name="services" value="Social media management" data-group="services"><span>Social media management</span></label>
+            <label class="choice"><input type="checkbox" name="services" value="Content creation &amp; shoots" data-group="services"><span>Content creation &amp; shoots</span></label>
+            <label class="choice"><input type="checkbox" name="services" value="Meta ads" data-group="services"><span>Meta ads &amp; lead gen</span></label>
+            <label class="choice"><input type="checkbox" name="services" value="Personal brand growth &amp; monetisation" data-group="services"><span>Growing &amp; monetising a personal brand</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="apply-step" data-step="4">
+          <legend>Where are you right now?</legend>
+          <label>Current audience (total followers)
+            <select name="audience" required>
+              <option value="">Select one</option>
+              <option>Under 1K</option>
+              <option>1K &ndash; 10K</option>
+              <option>10K &ndash; 50K</option>
+              <option>50K &ndash; 250K</option>
+              <option>250K+</option>
+            </select>
+          </label>
+          <label>Monthly budget for marketing
+            <select name="budget" required>
+              <option value="">Select one</option>
+              <option>Under &pound;500</option>
+              <option>&pound;500 &ndash; &pound;1,000</option>
+              <option>&pound;1,000 &ndash; &pound;2,500</option>
+              <option>&pound;2,500+</option>
+              <option>Not sure yet</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset class="apply-step" data-step="5">
+          <legend>What would a win look like in 90 days?</legend>
+          <label>Your goal<textarea name="goal" rows="4" placeholder="e.g. Hit 10K followers and land my first brand deal" required></textarea></label>
+          <label>When do you want to start?
+            <select name="start" required>
+              <option value="">Select one</option>
+              <option>As soon as possible</option>
+              <option>Within the next month</option>
+              <option>In 1 &ndash; 3 months</option>
+              <option>Just exploring</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <div class="apply-done" id="applyDone" hidden>
+          <p class="eyebrow">Application received</p>
+          <h3>Thanks, I've got it.</h3>
+          <p class="muted">I'll read through it and get back to you within 48 hours. Keep an eye on your inbox.</p>
+        </div>
+
+        <p class="apply-error" id="applyError" role="alert"></p>
+
+        <div class="apply-nav" id="applyNav">
+          <button type="button" class="btn btn-outline" id="applyBack" hidden>&larr; Back</button>
+          <button type="button" class="btn btn-primary" id="applyNext">Next &rarr;</button>
+          <button type="submit" class="btn btn-primary" id="applySubmit" hidden>Submit application &rarr;</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
   <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="contact-inner">
-      <p class="eyebrow">Let's talk</p>
-      <h2>Ready to grow your account like this?</h2>
+      <p class="eyebrow eyebrow-bracket">[ 02 / Next step ]</p>
+      <h2>Be my next <span class="serif-accent">case study.</span></h2>
+      <p class="contact-sub">Apply now to see if I'm the right growth partner for your brand.</p>
       <div class="contact-actions">
-        <a href="mailto:tomcristoni@gmail.com" class="btn btn-primary">tomcristoni@gmail.com</a>
-        <a href="assets/cv/Tommaso_Cristoni_CV.pdf" class="btn btn-outline" download>Download CV</a>
+        <a href="#apply" class="btn btn-primary">Apply Now &rarr;</a>
+        <a href="#work" class="btn btn-outline">See the work</a>
       </div>
       <div class="contact-meta">
-        <span>07599 601 634</span>
+        <a href="mailto:solo.studios.co@gmail.com">solo.studios.co@gmail.com</a>
+        <span class="sep">/</span>
+        <a href="assets/cv/Tommaso_Cristoni_CV.pdf" download>Download CV</a>
         <span class="sep">/</span>
         <span>London, UK</span>
         <span class="sep">/</span>
