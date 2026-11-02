@@ -609,3 +609,17 @@ section > .section-head:not(.fj-ads-head) .section-sub { font-size: 0.98rem; max
 .brand-links a { border: 1px solid var(--border); background: var(--card); border-radius: 999px; padding: 8px 16px; font-size: .82rem; color: var(--text-dim); transition: border-color .2s, color .2s; }
 .brand-links a:hover { border-color: var(--accent); color: var(--text); }
 .case-top .brand-head { margin-top: 0; margin-bottom: 26px; }
+
+/* media blocks */
+.asset-block { margin-top: 34px; }
+.asset-sub { color: var(--text-dim); font-size: .92rem; margin: 0 0 18px; max-width: 760px; }
+.asset-grid { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr)); }
+.asset-grid-tall { grid-template-columns: repeat(auto-fit, minmax(min(100%, 170px), 1fr)); }
+.asset-grid figure, .asset-fig { margin: 0; border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: var(--bg); }
+.asset-grid img, .asset-fig img { width: 100%; height: auto; display: block; }
+.asset-grid figcaption { padding: 9px 11px; font-size: .74rem; color: var(--text-faint); }
+.creative-row { display: grid; grid-template-columns: minmax(0, 340px) 1fr; gap: 34px; align-items: center; margin: 34px 0 8px; }
+.creative-text h3 { font-size: clamp(1.3rem, 2.4vw, 1.8rem); margin: 6px 0 14px; letter-spacing: -.02em; }
+.creative-text p { color: var(--text-dim); font-size: .97rem; line-height: 1.6; margin: 0 0 12px; }
+.fj-card + .fj-card { margin: 0; }
+@media (max-width: 760px) { .creative-row { grid-template-columns: 1fr; } .asset-fig { max-width: 340px; } }
