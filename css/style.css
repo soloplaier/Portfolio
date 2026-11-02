@@ -601,3 +601,4 @@ section > .section-head:not(.fj-ads-head) .section-sub { font-size: 0.98rem; max
 /* ---------- SOLO logo ---------- */
 .solo-logo { display: block; width: min(320px, 70%); height: auto; margin: 0 auto 28px; }
 .solo-logo-sm { display: block; width: 120px; height: auto; margin: 0 auto 16px; opacity: .8; }
+.case-card + .case-card { margin-top: 40px; }
