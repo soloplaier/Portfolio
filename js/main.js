@@ -16,18 +16,24 @@ const revealTargets = document.querySelectorAll(
 );
 revealTargets.forEach((el) => el.classList.add("reveal"));
 
-const revealObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("in");
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  },
-  { threshold: 0.15 }
-);
-revealTargets.forEach((el) => revealObserver.observe(el));
+// Threshold 0 so very tall cards still reveal, plus a timed fallback so nothing can stay hidden.
+if ("IntersectionObserver" in window) {
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0, rootMargin: "0px 0px -6% 0px" }
+  );
+  revealTargets.forEach((el) => revealObserver.observe(el));
+  setTimeout(() => revealTargets.forEach((el) => el.classList.add("in")), 5000);
+} else {
+  revealTargets.forEach((el) => el.classList.add("in"));
+}
 
 // Count-up animation for stat numbers
 function animateCount(el) {

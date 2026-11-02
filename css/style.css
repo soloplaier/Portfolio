@@ -577,3 +577,27 @@ section > .section-head:not(.fj-ads-head) .section-sub { font-size: 0.98rem; max
   .nav-toggle { display: flex; }
   .nav-cta { margin-left: auto; }
 }
+
+
+/* ---------- TikTok cards (replace flaky embeds) ---------- */
+.tt-card { display: block; position: relative; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--border); background: var(--card); aspect-ratio: 9 / 16; transition: transform .25s ease, border-color .25s ease; }
+.tt-card:hover, .tt-card:focus-visible { transform: translateY(-4px); border-color: var(--accent); outline: none; }
+.tt-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.tt-meta { position: absolute; left: 0; right: 0; bottom: 0; padding: 14px 14px 12px; display: flex; flex-direction: column; gap: 2px; background: linear-gradient(to top, rgba(10,10,11,.92), rgba(10,10,11,0)); text-align: left; }
+.tt-meta strong { color: var(--accent); font-size: 0.98rem; }
+.tt-meta em { font-style: normal; color: var(--text); font-size: 0.85rem; font-weight: 600; }
+
+/* ---------- Purpose Path data + testimonial slots ---------- */
+.case-data { margin-top: 34px; }
+.case-quotes { margin-top: 30px; }
+.case-quotes[hidden], .pp-quote[hidden] { display: none; }
+.case-quote-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.pp-quote { margin: 0; padding: 22px; border: 1px solid var(--border); border-radius: var(--radius); background: var(--bg); }
+.pp-quote blockquote { margin: 0 0 16px; color: var(--text); font-size: 1rem; line-height: 1.6; }
+.pp-quote figcaption strong { display: block; color: var(--text); }
+.pp-quote figcaption span { color: var(--text-faint); font-size: 0.85rem; }
+@media (max-width: 860px) { .case-quote-grid { grid-template-columns: 1fr; } }
+
+/* ---------- SOLO logo ---------- */
+.solo-logo { display: block; width: min(320px, 70%); height: auto; margin: 0 auto 28px; }
+.solo-logo-sm { display: block; width: 120px; height: auto; margin: 0 auto 16px; opacity: .8; }
