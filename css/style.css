@@ -596,6 +596,9 @@ section > .section-head:not(.fj-ads-head) .section-sub { font-size: 0.98rem; max
 .pp-quote blockquote { margin: 0 0 16px; color: var(--text); font-size: 1rem; line-height: 1.6; }
 .pp-quote figcaption strong { display: block; color: var(--text); }
 .pp-quote figcaption span { color: var(--text-faint); font-size: 0.85rem; }
+.pp-quote:has(.pp-quote-video) { grid-column: 1 / -1; display: grid; grid-template-columns: minmax(180px, 260px) 1fr; gap: 22px; align-items: center; }
+.pp-quote-video { display: block; width: 100%; aspect-ratio: 9 / 16; object-fit: cover; border-radius: var(--radius); background: #000; grid-row: span 2; }
+@media (max-width: 600px) { .pp-quote:has(.pp-quote-video) { grid-template-columns: 1fr; } .pp-quote-video { max-width: 280px; margin: 0 auto; } }
 @media (max-width: 860px) { .case-quote-grid { grid-template-columns: 1fr; } }
 
 /* ---------- SOLO logo ---------- */
